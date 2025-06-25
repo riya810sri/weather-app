@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="about"></h1>
+  <div class="container">
+    <h1 id="themeHeading">🌙 Weather App – Dark Mode</h1>
+
+    <!-- Header -->
+    <header>
+      <div class="toggle">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>Light Mode</span>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="locationInput" placeholder="Search for your preferred city..." />
+        <button onclick="getWeather()">Search</button>
+      </div>
+    </header>
+
+    <!-- Main Weather Display -->
+    <main class="grid">
+      <section class="card" id="timeCard">
+        <h2 id="cityName">City</h2>
+        <div id="time">--:--</div>
+        <div id="date">-- -- ----</div>
+      </section>
+
+      <section class="card" id="weatherCard">
+        <div class="temp" id="temperature">--°C</div>
+        <div id="feelsLike">Feels like: --°C</div>
+        <div class="icon" id="condition">☀️</div>
+        <div class="extras">
+          <p id="humidity">Humidity: --%</p>
+          <p id="wind">Wind: -- km/h</p>
+          <p id="pressure">Pressure: -- hPa</p>
+          <p id="uv">UV: --</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>5 Days Forecast</h3>
+        <div class="forecast" id="forecastDays">
+          <!-- JS will insert mock data -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
