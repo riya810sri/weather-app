@@ -3,7 +3,7 @@
 A modern, responsive weather web app that provides real-time weather updates and a 5-day forecast for any city worldwide. It features dynamic backgrounds, live local time updates, and a sleek light/dark mode toggle.
 
 ## 🔗 Live Demo
-[Click to Open Weather App](https://riya810sri.github.io/weather-app)
+[Click to Open Weather App](https://riya810sri.github.io/weather-app/)
 
 ---
 
