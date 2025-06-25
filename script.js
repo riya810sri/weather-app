@@ -3,7 +3,7 @@ const apiKey = "86c890508af54ab991875745252506";
 function getWeather() {
   const location = document.getElementById("locationInput").value || "London";
 
-  fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`)
+  fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`)
     .then(res => res.json())
     .then(data => {
       const weather = data.current;
